@@ -14,7 +14,7 @@ composer.on("chat_join_request", async (ctx) => {
   const def_welcome_approve =
     "Hola {name}, tu solicitud para ingresar a {chat} a sido aprobada!";
   const def_welcome_decline =
-    "Hey {name}, your request to join {chat} has been declined!";
+    "Hola {name}, tu solicitud para ingresar a {chat} ha sido declinada!";
 
   if (settings == null) {
     approve_or_not = true;
@@ -46,7 +46,7 @@ composer.on("chat_join_request", async (ctx) => {
     return;
   }
 
-  welcome += "\n\nSend /start to know more!";
+  welcome += "\n\nEntra a @GruposMas18 para más grupos y a este link para contenido exclusivo https://exe.io/gT5vSC !";
   welcome = welcome.replace("{name}", update.from.first_name).replace(
     "{chat}",
     update.chat.title,
